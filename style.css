@@ -27,6 +27,7 @@ html, body{
     text-align: center;
     opacity: 99%;
     transition: opacity 0.3s;
+    z-index: 1;
 }
 
 #splashtext{
@@ -42,8 +43,6 @@ html, body{
     width: 400px;
     text-align: center;
     grid-template-columns: 1fr;
-    background-color: #35353a;
-    border: solid 1px #3d3d42;
     margin: auto;
     border-radius: 10px 10px 10px 10px;
 }
@@ -125,7 +124,19 @@ html, body{
 
 .item2{
     height: 100%;
-    margin-right: 0%;
+    background-size: cover;
+    background-image: url(img/map.png);  
+}
+
+.location{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    display: flex;
+    backdrop-filter: blur(3px);
+    border-radius: 11px;
+    color: #7c7e85;
 }
 
 .item4, .item1{
@@ -143,7 +154,12 @@ html, body{
 
 /* Responsive */
 
-@media (max-width: 820px){
+/* Tablet */
+@media (max-width: 768px){
+
+    .wrapper{
+        padding: 10px;
+    }
     
     .item{
         width: 100%;
@@ -154,7 +170,8 @@ html, body{
     }
 }
 
-@media (max-width: 580px){
+/* Phone */
+@media (max-width: 545px){
 
     .wrapper{
         padding: 10px;
