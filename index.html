@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <audio hidden id="music" src="audio/music.mp3"></audio>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="styles/splashscreen.css">
     <title>Purex - biography</title>
 </head>
 <body>
-    <!-- Wrapper -->
+    <!-- WRAPPER -->
     <div class="wrapper">
 
     <!-- Click to start -->
@@ -20,13 +20,13 @@
         <div class="item item1">
             <!-- PROFILE -->
             <div class="profile">
-                <!-- top -->
+                <!-- TOP -->
                 <div class="profiletop">
                     <div class="banner"></div>
                     <div class="pfp"></div>
                     <p id="dc-name">Purex#2612</p>
                 </div>
-                <!-- bottom -->
+                <!-- BOTTOM -->
                 <div class="profilebottom">
                 <div class="aboutme">
                     <p style="font-size: 14px; margin-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum deserunt dolorem aperiam est commodi beatae quibusdam dignissimos pariatur id error, odit culpa, libero reiciendis blanditiis, quidem magni quaerat voluptatibus!</p>
@@ -34,15 +34,16 @@
             </div>
 </div>
         </div>
-        <!-- MAP -->
+        <!-- MAP & TIMEZONE -->
         <div class="item item2">
-            <div class="location">
-                <h3>📍 From The Netherlands</h3>
+            <img class="netherlands" src="img/netherlands2.svg" alt="The Netherlands">
+            <div class="datetime">
+                <div class="time">00:00 PM</div>
+                <div class="date">Monday, Feb 2 2024</div>
             </div>
-            <a href="img/map.png"></a>
         </div>
         <div class="item item3">
-            Discord activity
+            <audio hidden class="music" id="music" src="audio/music.mp3"></audio>
         </div>
     </div>
 
@@ -65,5 +66,6 @@
     </div>
 </div>
 </body>
-    <script src="script.js"></script>
+    <script src="scripts/splashscreen.js"></script>
+    <script src="scripts/time.js"></script>
 </html>
